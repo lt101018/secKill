@@ -6,15 +6,13 @@ import com.miaoshaproject.error.EmBusinessError;
 import com.miaoshaproject.response.CommonReturnType;
 import com.miaoshaproject.service.UserService;
 import com.miaoshaproject.service.model.UserModel;
+import org.apache.tomcat.util.security.MD5Encoder;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Random;
 
 @Controller("user")
@@ -29,6 +27,31 @@ public class UserController extends BaseController{
     private HttpServletRequest httpServletRequest;
     //it's a proxy. thread local map is used to make different thread operating different requests.
 
+    @RequestMapping(value="/register", method={RequestMethod.POST}, consumes = {CONTENT_TYPE_FORMED})
+    @ResponseBody
+    public CommonReturnType register(@RequestParam(name="telephone")String telephone,
+                                     @RequestParam(name="otpCode")String otpCode,
+                                     @RequestParam(name="name")String name,
+                                     @RequestParam(name="gender") Boolean gender,
+                                     @RequestParam(name="age")Integer age,
+                                     @RequestParam(name="password")String password) throws BusinessException {
+        //match otp with phone
+        String originOtp = (String) this.httpServletRequest.getSession().getAttribute(telephone);
+        if(!com.alibaba.druid.util.StringUtils.equals(otpCode,originOtp)){
+            throw new BusinessException(EmBusinessError.PARAMETER_VALIDATION_ERROR, "Wrong OTP code.");
+        }
+
+        //if otp valid, register.
+        UserModel userModel = new UserModel();
+        userModel.setName(name);
+        userModel.setGender(gender);
+        userModel.setAge(age);
+        userModel.setTelephone(telephone);
+        userModel.setRegisterMode("byphone");
+        userModel.setEncrptPassword(MD5Encoder.encode(password.getBytes()));
+        userService.register(userModel);
+        return CommonReturnType.create(null);
+    }
 
     @RequestMapping(value="/getotp", method={RequestMethod.POST}, consumes = {CONTENT_TYPE_FORMED})
     @ResponseBody
