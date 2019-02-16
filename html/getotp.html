@@ -43,7 +43,7 @@
                 success:function(data){
                     if(data.status="success"){
                         alert("OTP message sent successfully! Please check your phone.")
-                        window.location.href="http://localhost:63342/SecKill/html/register.html";
+                        window.location.href="register.html";
                     }else{
                         alert("OTP message sending fails. Reason:" + data.data.errMsg())
                     }

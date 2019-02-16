@@ -21,6 +21,8 @@ public interface UserDOMapper {
 
     UserDO selectByPrimaryKey(Integer id);
 
+    UserDO selectByTelephone(String telephone);
+
     int updateByExampleSelective(@Param("record") UserDO record, @Param("example") UserDOExample example);
 
     int updateByExample(@Param("record") UserDO record, @Param("example") UserDOExample example);

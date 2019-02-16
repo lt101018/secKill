@@ -1,5 +1,6 @@
 package com.miaoshaproject.service.impl;
 
+import com.miaoshaproject.controller.viewobject.UserVO;
 import com.miaoshaproject.dao.UserDOMapper;
 import com.miaoshaproject.dao.UserPasswordDOMapper;
 import com.miaoshaproject.dataobject.UserDO;
@@ -11,10 +12,13 @@ import com.miaoshaproject.service.model.UserModel;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import sun.awt.EmbeddedFrame;
 
 import javax.jws.soap.SOAPBinding;
+import javax.swing.plaf.nimbus.NimbusStyle;
 import javax.xml.ws.ServiceMode;
 
 @Service
@@ -48,11 +52,29 @@ public class UserServiceImpl implements UserService {
             throw new BusinessException(EmBusinessError.PARAMETER_VALIDATION_ERROR);
         }
         UserDO userDO = convertFromModel(userModel);
-        userDOMapper.insertSelective(userDO);
+        try{
+            userDOMapper.insertSelective(userDO);
+        }catch (DuplicateKeyException ex){
+            throw new BusinessException(EmBusinessError.PARAMETER_VALIDATION_ERROR, "Phone number existed");
+        }
         UserPasswordDO userPasswordDO = convertPasswdFromModel(userModel);
         userPasswordDO.setUserId(userDO.getId());
         userPasswordDOMapper.insertSelective(userPasswordDO);
         return;
+    }
+
+    @Override
+    public UserModel validateLogin(String telephone, String encryptPassword) throws BusinessException {
+        UserDO userDO = userDOMapper.selectByTelephone(telephone);
+        if(userDO == null){
+            throw new BusinessException(EmBusinessError.USER_LOGIN_FAIL);
+        }
+        UserPasswordDO userPasswordDO = userPasswordDOMapper.selectByUserId(userDO.getId());
+        UserModel userModel = convertFromDataObject(userDO, userPasswordDO);
+        if(!StringUtils.equals(encryptPassword, userModel.getEncrptPassword())){
+            throw new BusinessException(EmBusinessError.USER_LOGIN_FAIL);
+        }
+        return userModel;
     }
 
 

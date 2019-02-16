@@ -4,6 +4,7 @@ public enum EmBusinessError implements CommonError {
     PARAMETER_VALIDATION_ERROR(10001, "Invalid Input Value"),
     UNKNOWN_ERROR(10002, "Unknown Error"),
     USER_NOT_EXIST(20001,"User Not Exists"),
+    USER_LOGIN_FAIL(20002,"Wrong phone number or password"),
     ;
 
     private int errCode;

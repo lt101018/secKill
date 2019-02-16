@@ -6,6 +6,7 @@ import com.miaoshaproject.error.EmBusinessError;
 import com.miaoshaproject.response.CommonReturnType;
 import com.miaoshaproject.service.UserService;
 import com.miaoshaproject.service.model.UserModel;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.tomcat.util.security.MD5Encoder;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +31,23 @@ public class UserController extends BaseController{
     @Autowired
     private HttpServletRequest httpServletRequest;
     //it's a proxy. thread local map is used to make different thread operating different requests.
+    @RequestMapping(value="/login", method={RequestMethod.POST}, consumes = {CONTENT_TYPE_FORMED})
+    @ResponseBody
+    public CommonReturnType login(@RequestParam(name="telephone") String telephone,
+                                  @RequestParam(name="password") String password) throws BusinessException, UnsupportedEncodingException, NoSuchAlgorithmException {
+         if(StringUtils.isEmpty(telephone)|| StringUtils.isEmpty(password)){
+             throw new BusinessException(EmBusinessError.PARAMETER_VALIDATION_ERROR);
+         }
+
+         UserModel userModel = userService.validateLogin(telephone, this.encodeByMD5(password));
+
+         this.httpServletRequest.getSession().setAttribute("IS_LOGIN",true);
+         this.httpServletRequest.getSession().setAttribute("LOGIN_USER",convertFromUserModel(userModel));
+
+
+        return CommonReturnType.create(null);
+    }
+
 
     @RequestMapping(value="/register", method={RequestMethod.POST}, consumes = {CONTENT_TYPE_FORMED})
     @ResponseBody
