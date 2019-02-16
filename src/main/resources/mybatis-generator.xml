@@ -25,8 +25,18 @@
             <property name="enableSubPackages" value="true" />
         </javaClientGenerator>
 
-        <table tableName="user_info" domainObjectName="UserDO" ></table>
-        <table tableName="user_password" domainObjectName="UserPasswordDO" ></table>
+       <!-- <table tableName="user_info" domainObjectName="UserDO" enableSelectByExample="false"
+               enableDeleteByExample="false" enableUpdateByExample="false" enableCountByExample="false"
+                selectByExampleQueryId="false"></table>
+        <table tableName="user_password" domainObjectName="UserPasswordDO" enableSelectByExample="false"
+               enableDeleteByExample="false" enableUpdateByExample="false" enableCountByExample="false"
+               selectByExampleQueryId="false"></table>-->
+        <table tableName="item" domainObjectName="ItemDO" enableSelectByExample="false"
+               enableDeleteByExample="false" enableUpdateByExample="false" enableCountByExample="false"
+               selectByExampleQueryId="false"></table>
+        <table tableName="item_stock" domainObjectName="ItemStockDO" enableSelectByExample="false"
+               enableDeleteByExample="false" enableUpdateByExample="false" enableCountByExample="false"
+               selectByExampleQueryId="false"></table>
 
     </context>
 </generatorConfiguration>
