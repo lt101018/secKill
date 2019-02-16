@@ -61,7 +61,7 @@ public class ItemServiceImpl implements ItemService {
         ItemStockDO itemStockDO = this.convertItemStockDOFroItemModel(itemModel);
         itemStockDO.setItemId(itemDO.getId());
         itemStockDOMapper.insertSelective(itemStockDO);
-        return this.getItemById(itemModel.getId());
+        return this.getItemById(itemDO.getId());
     }
 
     @Override

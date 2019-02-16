@@ -10,9 +10,7 @@ import com.miaoshaproject.service.model.ItemModel;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.math.BigDecimal;
 
@@ -24,6 +22,17 @@ public class ItemController extends BaseController{
     @Autowired
     private ItemService itemService;
 
+    @RequestMapping(value="/get", method={RequestMethod.GET})
+    @ResponseBody
+    public CommonReturnType getItem(@RequestParam(name="id") Integer id){
+        ItemModel itemModel = itemService.getItemById(id);
+        ItemVO itemVO = this.convertVOFromModel(itemModel);
+        return CommonReturnType.create(itemVO);
+    }
+
+
+    @RequestMapping(value="/create", method={RequestMethod.POST}, consumes = {CONTENT_TYPE_FORMED})
+    @ResponseBody
     public CommonReturnType createItem(@RequestParam(name = "title")String title,
                                        @RequestParam(name = "price") BigDecimal price,
                                        @RequestParam(name = "description")String description,
