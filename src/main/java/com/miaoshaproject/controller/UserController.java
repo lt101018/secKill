@@ -11,13 +11,17 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import sun.misc.BASE64Encoder;
 
 import javax.servlet.http.HttpServletRequest;
+import java.io.UnsupportedEncodingException;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.Random;
 
 @Controller("user")
 @RequestMapping("/user")
-@CrossOrigin //To avoid CORS error,because html file and localhost have different origin.
+@CrossOrigin(allowCredentials = "true", allowedHeaders = "*") //To avoid CORS error,because html file and localhost have different origin.
 public class UserController extends BaseController{
 
     @Autowired
@@ -34,7 +38,7 @@ public class UserController extends BaseController{
                                      @RequestParam(name="name")String name,
                                      @RequestParam(name="gender") Boolean gender,
                                      @RequestParam(name="age")Integer age,
-                                     @RequestParam(name="password")String password) throws BusinessException {
+                                     @RequestParam(name="password")String password) throws BusinessException, UnsupportedEncodingException, NoSuchAlgorithmException {
         //match otp with phone
         String originOtp = (String) this.httpServletRequest.getSession().getAttribute(telephone);
         if(!com.alibaba.druid.util.StringUtils.equals(otpCode,originOtp)){
@@ -48,9 +52,16 @@ public class UserController extends BaseController{
         userModel.setAge(age);
         userModel.setTelephone(telephone);
         userModel.setRegisterMode("byphone");
-        userModel.setEncrptPassword(MD5Encoder.encode(password.getBytes()));
+        userModel.setEncrptPassword(this.encodeByMD5(password));
         userService.register(userModel);
         return CommonReturnType.create(null);
+    }
+
+    public String encodeByMD5(String str) throws NoSuchAlgorithmException, UnsupportedEncodingException {
+        MessageDigest md5 = MessageDigest.getInstance("MD5");
+        BASE64Encoder base64Encoder = new BASE64Encoder();
+        String newStr = base64Encoder.encode(md5.digest(str.getBytes("utf-8")));
+        return newStr;
     }
 
     @RequestMapping(value="/getotp", method={RequestMethod.POST}, consumes = {CONTENT_TYPE_FORMED})
