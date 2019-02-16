@@ -1,13 +1,25 @@
 package com.miaoshaproject.service.model;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+
 public class UserModel {
     private Integer id;
+    @NotBlank(message = "User Name cannot be blank")
     private String name;
+    @NotNull(message = "Gender cannot be blank")
     private Boolean gender;
+    @NotNull(message = "Age cannot be blank")
+    @Min(value=0, message = "Age has to be greater than 0")
+    @Max(value=150, message = "Age too large")
     private Integer age;
+    @NotBlank(message = "Phone number cannot be blank")
     private String telephone;
     private String registerMode;
     private String thirdPartyId;
+    @NotBlank(message = "Password cannot be blank")
     private String encrptPassword;
 
     public void setEncrptPassword(String encrptPassword) {

@@ -101,10 +101,10 @@
                 },
                 xhrFields:{withCredentials:true},
                 success:function(data){
-                    if(data.status="success"){
+                    if(data.status=="success"){
                         alert("Register Success")
                     }else{
-                        alert("Register fails. Reason:" + data.data.errMsg())
+                        alert("Register fails. Reason:" + data.data.errMsg)
                     }
                 },
                 error:function(data){
