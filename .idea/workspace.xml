@@ -2,40 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b2bf681-7780-481d-8563-d47e858c08b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/html/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/validator/ValidationResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/validator/ValidatorImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/getotp.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/getotp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/service/model/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/service/model/UserModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaoshaproject/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaoshaproject/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaoshaproject/controller/BaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaoshaproject/controller/BaseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaoshaproject/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaoshaproject/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaoshaproject/controller/viewobject/UserVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaoshaproject/controller/viewobject/UserVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaoshaproject/dao/UserDOMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaoshaproject/dao/UserDOMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaoshaproject/dao/UserPasswordDOMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaoshaproject/dao/UserPasswordDOMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaoshaproject/dataobject/UserDO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaoshaproject/dataobject/UserDO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaoshaproject/dataobject/UserDOExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaoshaproject/dataobject/UserDOExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaoshaproject/dataobject/UserDOExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaoshaproject/dataobject/UserDOExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaoshaproject/dataobject/UserDOExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaoshaproject/dataobject/UserDOExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaoshaproject/dataobject/UserDOExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaoshaproject/dataobject/UserDOExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaoshaproject/dataobject/UserPasswordDO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaoshaproject/dataobject/UserPasswordDO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaoshaproject/dataobject/UserPasswordDOExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaoshaproject/dataobject/UserPasswordDOExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaoshaproject/dataobject/UserPasswordDOExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaoshaproject/dataobject/UserPasswordDOExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaoshaproject/dataobject/UserPasswordDOExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaoshaproject/dataobject/UserPasswordDOExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaoshaproject/dataobject/UserPasswordDOExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaoshaproject/dataobject/UserPasswordDOExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaoshaproject/error/BusinessException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaoshaproject/error/BusinessException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaoshaproject/error/CommonError.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaoshaproject/error/CommonError.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaoshaproject/error/EmBusinessError.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaoshaproject/error/EmBusinessError.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaoshaproject/response/CommonReturnType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaoshaproject/response/CommonReturnType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaoshaproject/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaoshaproject/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaoshaproject/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaoshaproject/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaoshaproject/service/model/UserModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaoshaproject/service/model/UserModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapping/UserDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/UserDOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/miaoshaproject/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/miaoshaproject/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/dao/UserDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/dao/UserDOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/dao/UserPasswordDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/dao/UserPasswordDOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/dataobject/UserDOExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/dataobject/UserPasswordDOExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/UserDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/UserDOMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/UserPasswordDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/UserPasswordDOMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,82 +21,37 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/miaoshaproject/controller/UserController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/miaoshaproject/dataobject/UserDO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-175">
-              <caret line="41" column="50" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
+            <state relative-caret-position="100">
+              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/UserPasswordDOMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/miaoshaproject/dao/UserDOMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/miaoshaproject/service/model/UserModel.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/miaoshaproject/dao/UserPasswordDOMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/miaoshaproject/validator/ValidationResult.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="11" column="58" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/miaoshaproject/validator/ValidatorImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/miaoshaproject/service/impl/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="59" column="37" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/miaoshaproject/controller/BaseController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/miaoshaproject/response/CommonReturnType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-175">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="215">
+              <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -151,6 +79,7 @@
       <find>lang3</find>
       <find>session</find>
       <find>VO</find>
+      <find>example</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -163,8 +92,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/mybatis-generator.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/miaoshaproject/service/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miaoshaproject/dataobject/UserDO.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapping/UserPasswordDOMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/miaoshaproject/dao/UserPasswordDOMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miaoshaproject/App.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/miaoshaproject/controller/viewobject/UserVO.java" />
@@ -173,8 +100,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/miaoshaproject/error/EmBussinessError.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miaoshaproject/error/BusinessException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miaoshaproject/controller/BaseController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapping/UserDOMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/miaoshaproject/dao/UserDOMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miaoshaproject/error/EmBusinessError.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miaoshaproject/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miaoshaproject/controller/UserController.java" />
@@ -186,6 +111,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/miaoshaproject/validator/ValidatorImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miaoshaproject/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miaoshaproject/service/model/UserModel.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapping/UserDOMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapping/UserPasswordDOMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/miaoshaproject/dao/UserDOMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/miaoshaproject/dao/UserPasswordDOMapper.java" />
       </list>
     </option>
   </component>
@@ -253,7 +182,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="miaoshaproject" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SecKill" type="b2602c69:ProjectViewProjectNode" />
@@ -262,18 +191,22 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="miaoshaproject" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="dataobject" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SecKill" type="b2602c69:ProjectViewProjectNode" />
               <item name="SecKill" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="miaoshaproject" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SecKill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SecKill" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapping" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -285,7 +218,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="android.sdk.path" value="D:/apps/AndroidSDK" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550288287732" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550289128601" />
     <property name="last_opened_file_path" value="D:/apps/JavaFX/javafx-sdk-11.0.2/lib/javafx.web.jar!/" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -379,21 +312,21 @@
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="aws.explorer" sideWeight="0.12837838" side_tool="true" visible="true" weight="0.24972972" />
+      <window_info id="aws.explorer" sideWeight="0.13523132" side_tool="true" visible="true" weight="0.24972972" />
       <window_info id="Image Layers" />
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8716216" visible="true" weight="0.24972972" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8647687" visible="true" weight="0.24972972" />
       <window_info id="Structure" order="1" sideWeight="0.19005328" side_tool="true" weight="0.24972972" />
       <window_info anchor="bottom" id="Version Control" weight="0.2169249" />
-      <window_info anchor="bottom" id="Terminal" weight="0.38021454" />
+      <window_info anchor="bottom" id="Terminal" weight="0.25625744" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.33015496" />
+      <window_info anchor="bottom" id="Messages" visible="true" weight="0.33015496" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2943981" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32896304" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2943981" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39928487" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -436,20 +369,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3025">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/UserPasswordDOMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
-          <caret line="128" column="28" selection-start-line="128" selection-start-column="28" selection-end-line="128" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miaoshaproject/dao/UserPasswordDOMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -505,20 +424,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miaoshaproject/dataobject/UserDO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/UserDOMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="118" column="31" selection-start-line="118" selection-start-column="14" selection-end-line="118" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/miaoshaproject/error/BusinessException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-100">
@@ -537,27 +442,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miaoshaproject/dao/UserDOMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miaoshaproject/response/CommonReturnType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-175">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miaoshaproject/controller/BaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
@@ -589,20 +473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miaoshaproject/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-175">
-          <caret line="41" column="50" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/miaoshaproject/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="59" column="37" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -619,8 +489,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/miaoshaproject/service/model/UserModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
+        <state relative-caret-position="375">
           <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/miaoshaproject/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="41" column="50" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/miaoshaproject/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret line="59" column="37" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/miaoshaproject/controller/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/miaoshaproject/response/CommonReturnType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-175">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/miaoshaproject/dataobject/UserDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/UserDOMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/UserPasswordDOMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/miaoshaproject/dao/UserDOMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/miaoshaproject/dao/UserPasswordDOMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
         </state>
       </provider>
     </entry>
