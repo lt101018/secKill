@@ -64,22 +64,20 @@ function getParam(paramName) {
 	return paramValue == "" && (paramValue = null), paramValue      
 }
 
-
-    jQuery(document).ready(function(){
-      	$('#createorder').on("click",function(){
-            window.location.href="getotp.html";
-       
+jQuery(document).ready(function(){
+	$('#createorder').on("click",function(){   
             $.ajax({
-                type:"GET",
+                type:"POST",
                 url:"http://localhost:8090/order/createorder",
+                contentType:"application/x-www-form-urlencoded",
                 data:{
                     "itemId":g_itemVO.id,
-                    "amount":1
+                    "amount":1,
                 },
                 xhrFields:{withCredentials:true},
                 success:function(data){
                     if(data.status=="success"){
-
+                    	alert("Your order is placed successfully.");
                     }else{
                         alert("Place order fails. Reason:" + data.data.errMsg)
                     }
@@ -89,8 +87,29 @@ function getParam(paramName) {
                 }
             })
         });
-    });
 
+
+
+            $.ajax({
+                type:"GET",
+                url:"http://localhost:8090/item/get",
+                data:{
+                    "id":getParam("id"),
+                },
+                xhrFields:{withCredentials:true},
+                success:function(data){
+                    if(data.status=="success"){
+                        g_itemVO=data.data;
+                        reloadDom();
+                    }else{
+                        alert("Get item info fails. Reason:" + data.data.errMsg)
+                    }
+                },
+                error:function(data){
+                    alert("Get item info fails. fails. Reason:" + data.responseText);
+                }
+            })
+    });
     function reloadDom(){
     	$("#title").text(g_itemVO.title);
     	$("#description").text(g_itemVO.description);
@@ -98,7 +117,6 @@ function getParam(paramName) {
     	$("#stock").text(g_itemVO.stock);
     	$("#sales").text(g_itemVO.sales);
     	$("#imgUrl").attr("src", g_itemVO.imgUrl);
-
     }
 </script>
 
