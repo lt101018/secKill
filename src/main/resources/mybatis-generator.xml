@@ -31,12 +31,17 @@
         <table tableName="user_password" domainObjectName="UserPasswordDO" enableSelectByExample="false"
                enableDeleteByExample="false" enableUpdateByExample="false" enableCountByExample="false"
                selectByExampleQueryId="false"></table>-->
-        <table tableName="item" domainObjectName="ItemDO" enableSelectByExample="false"
+        <!--<table tableName="item" domainObjectName="ItemDO" enableSelectByExample="false"-->
+               <!--enableDeleteByExample="false" enableUpdateByExample="false" enableCountByExample="false"-->
+               <!--selectByExampleQueryId="false"></table>-->
+        <!--<table tableName="item_stock" domainObjectName="ItemStockDO" enableSelectByExample="false"-->
+               <!--enableDeleteByExample="false" enableUpdateByExample="false" enableCountByExample="false"-->
+               <!--selectByExampleQueryId="false"></table>-->
+        <!--<table tableName="order_info" domainObjectName="OrderDO" enableSelectByExample="false"-->
+               <!--enableDeleteByExample="false" enableUpdateByExample="false" enableCountByExample="false"-->
+               <!--selectByExampleQueryId="false"></table>-->
+        <table tableName="sequence_info" domainObjectName="SequenceDO" enableSelectByExample="false"
                enableDeleteByExample="false" enableUpdateByExample="false" enableCountByExample="false"
                selectByExampleQueryId="false"></table>
-        <table tableName="item_stock" domainObjectName="ItemStockDO" enableSelectByExample="false"
-               enableDeleteByExample="false" enableUpdateByExample="false" enableCountByExample="false"
-               selectByExampleQueryId="false"></table>
-
     </context>
 </generatorConfiguration>

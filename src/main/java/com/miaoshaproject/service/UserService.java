@@ -1,6 +1,5 @@
 package com.miaoshaproject.service;
 
-import com.miaoshaproject.controller.viewobject.UserVO;
 import com.miaoshaproject.error.BusinessException;
 import com.miaoshaproject.service.model.UserModel;
 
