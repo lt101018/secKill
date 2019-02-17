@@ -18,7 +18,7 @@ public class ItemVO{
     private Integer promoStatus; //0:no seckill, 1:seckill not start 2:seckill going
     private BigDecimal promoPrice;
     private Integer promoId;
-    private DateTime startDate;
+    private String startDate;
 
     public Integer getPromoStatus() {
         return promoStatus;
@@ -44,11 +44,11 @@ public class ItemVO{
         this.promoId = promoId;
     }
 
-    public DateTime getStartDate() {
+    public String getStartDate() {
         return startDate;
     }
 
-    public void setStartDate(DateTime startDate) {
+    public void setStartDate(String startDate) {
         this.startDate = startDate;
     }
 

@@ -8,12 +8,14 @@ import com.miaoshaproject.response.CommonReturnType;
 import com.miaoshaproject.service.ItemService;
 import com.miaoshaproject.service.impl.ItemServiceImpl;
 import com.miaoshaproject.service.model.ItemModel;
+import org.joda.time.format.DateTimeFormat;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.math.BigDecimal;
+import java.text.DateFormat;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -71,7 +73,7 @@ public class ItemController extends BaseController{
         BeanUtils.copyProperties(itemModel, itemVO);
         if(itemModel.getPromoModule() != null){
             itemVO.setPromoStatus(itemModel.getPromoModule().getStatus());
-            itemVO.setStartDate(itemModel.getPromoModule().getStartDate());
+            itemVO.setStartDate(itemModel.getPromoModule().getStartDate().toString(DateTimeFormat.forPattern("yyyy-MM-dd HH:mm:ss")));
             itemVO.setPromoId(itemModel.getPromoModule().getId());
             itemVO.setPromoPrice(itemModel.getPromoModule().getPromoItemPrice());
         }else{

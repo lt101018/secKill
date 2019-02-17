@@ -6,6 +6,7 @@ import com.miaoshaproject.service.PromoService;
 import com.miaoshaproject.service.model.PromoModule;
 import org.joda.time.DateTime;
 import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -13,6 +14,7 @@ import java.math.BigDecimal;
 @Service
 public class PromoServiceImpl implements PromoService {
 
+    @Autowired
     PromoDOMapper promoDOMapper;
 
     @Override
@@ -30,9 +32,6 @@ public class PromoServiceImpl implements PromoService {
         }else{
             promoModule.setStatus(2);
         }
-
-
-
 
         return promoModule;
     }

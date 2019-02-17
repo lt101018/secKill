@@ -88,9 +88,11 @@ public class ItemServiceImpl implements ItemService {
             return null;
         ItemStockDO itemStockDO = itemStockDOMapper.selectByItemId(itemDO.getId());
         ItemModel itemModel = convertModelFromDataObject(itemDO, itemStockDO);
-        PromoModule promoModule = promoService.getPromoByItemId(itemModel.getId());
-        if(promoModule != null && promoModule.getStatus().intValue()!=3){
-            itemModel.setPromoModule(promoModule);
+        PromoModule promoModel = promoService.getPromoByItemId(itemModel.getId());
+
+        if(promoModel!=null && promoModel.getStatus().intValue()!=3){
+            //将秒杀对象聚合进ItemModel，将该商品和秒杀对象关联起来
+            itemModel.setPromoModule(promoModel);
         }
         return itemModel;
     }
