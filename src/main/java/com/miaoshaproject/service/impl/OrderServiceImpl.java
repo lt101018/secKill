@@ -38,7 +38,7 @@ public class OrderServiceImpl implements OrderService {
 
     @Transactional
     @Override
-    public OrderModel createOrder(Integer userId, Integer itemId, Integer amount) throws BusinessException {
+    public OrderModel createOrder(Integer userId, Integer itemId, Integer promoId, Integer amount) throws BusinessException {
 
         ItemModel itemModel = itemService.getItemById(itemId);
         if(itemModel == null)
@@ -50,6 +50,15 @@ public class OrderServiceImpl implements OrderService {
         if(amount <= 0 || amount > 99)
             throw new BusinessException(EmBusinessError.PARAMETER_VALIDATION_ERROR, "Purchase amount not valid");
 
+        if(promoId != null){
+            if(promoId.intValue() != itemModel.getPromoModule().getId()){
+                throw new BusinessException(EmBusinessError.PARAMETER_VALIDATION_ERROR, "Promo info not valid");
+            }else if (itemModel.getPromoModule().getStatus().intValue()!=2){
+                throw new BusinessException(EmBusinessError.PARAMETER_VALIDATION_ERROR, "Seckill is not start");
+            }
+        }
+
+
         Boolean result = itemService.decreaseStock(itemId, amount);
         if(!result)
             throw new BusinessException(EmBusinessError.STOCK_NOT_ENOUGH);
@@ -57,9 +66,14 @@ public class OrderServiceImpl implements OrderService {
         OrderModel orderModel = new OrderModel();
         orderModel.setAmount(amount);
         orderModel.setItemId(itemId);
-        orderModel.setItemPrice(itemModel.getPrice());
+        if(promoId != null){
+            orderModel.setItemPrice(itemModel.getPromoModule().getPromoItemPrice());
+        }else {
+            orderModel.setItemPrice(itemModel.getPrice());
+        }
         orderModel.setUserId(userId);
-        orderModel.setOrderPrice(itemModel.getPrice().multiply(new BigDecimal(amount)));
+        orderModel.setPromoId(promoId);
+        orderModel.setOrderPrice(orderModel.getItemPrice().multiply(new BigDecimal(amount)));
 
         orderModel.setId(generateOrderNumber());
         OrderDO orderDO = convertFromOrderModel(orderModel);

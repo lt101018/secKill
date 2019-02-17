@@ -7,6 +7,16 @@ public class OrderModel {
     private Integer userId;
     private Integer itemId;
     private BigDecimal itemPrice;//price per item
+    private Integer promoId;//seckill if not null
+
+    public Integer getPromoId() {
+        return promoId;
+    }
+
+    public void setPromoId(Integer promoId) {
+        this.promoId = promoId;
+    }
+
     private Integer amount;
     private BigDecimal orderPrice;//total amount of money
 
