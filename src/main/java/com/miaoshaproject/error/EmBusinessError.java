@@ -5,6 +5,7 @@ public enum EmBusinessError implements CommonError {
     UNKNOWN_ERROR(10002, "Unknown Error"),
     USER_NOT_EXIST(20001,"User Not Exists"),
     USER_LOGIN_FAIL(20002,"Wrong phone number or password"),
+    USER_NOT_LOGIN(20003,"You haven't login"),
     STOCK_NOT_ENOUGH(30001, "The stock is not enough"),
     ;
 

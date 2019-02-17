@@ -59,6 +59,7 @@
                 success:function(data){
                     if(data.status=="success"){
                         alert("Login success")
+                        window.location.href="listitem.html";
                     }else{
                         alert("Login fails. Reason:" + data.data.errMsg)
                     }

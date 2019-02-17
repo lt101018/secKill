@@ -78,8 +78,13 @@ jQuery(document).ready(function(){
                 success:function(data){
                     if(data.status=="success"){
                     	alert("Your order is placed successfully.");
+                    	window.location.reload();
                     }else{
                         alert("Place order fails. Reason:" + data.data.errMsg)
+                        if(data.data.errCode == 20003){
+                        	alert("Redirecting to login page...")
+                        	window.location.href="login.html";
+                        }
                     }
                 },
                 error:function(data){

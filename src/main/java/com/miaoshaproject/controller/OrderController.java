@@ -32,7 +32,7 @@ public class OrderController extends BaseController {
 
         Boolean isLogin = (Boolean)httpServletRequest.getSession().getAttribute("IS_LOGIN");
         if(isLogin == null || isLogin.booleanValue() == false)
-            throw new BusinessException(EmBusinessError.PARAMETER_VALIDATION_ERROR, "User not login");
+            throw new BusinessException(EmBusinessError.USER_NOT_LOGIN);
         UserVO userVO = (UserVO) httpServletRequest.getSession().getAttribute("LOGIN_USER");
 
         OrderModel orderModel = orderService.createOrder(userVO.getId(), itemId, amount);
