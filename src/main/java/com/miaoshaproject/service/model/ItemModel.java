@@ -19,6 +19,16 @@ public class ItemModel {
     private Integer sales;
     @NotBlank(message = "Image URL cannot be blank")
     private String imgUrl;
+    //if promoModule not null, seckill is going on
+    private PromoModule promoModule;
+
+    public PromoModule getPromoModule() {
+        return promoModule;
+    }
+
+    public void setPromoModule(PromoModule promoModule) {
+        this.promoModule = promoModule;
+    }
 
     public Integer getId() {
         return id;
